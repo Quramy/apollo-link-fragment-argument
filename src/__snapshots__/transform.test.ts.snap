@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transform should pass input document when no @arguments directives 1`] = `
+"fragment Hoge on Query {
+  hello
+}
+
+query MyQuery {
+  ...Hoge
+}
+"
+`;
+
+exports[`transform should transform Relay example 1`] = `
+"fragment TodoList_list on TodoList {
+  title
+  todoItems(userID: $userID, first: $count) {
+    ...TodoItem_item
+  }
+}
+
+query TodoListQuery($count: Int, $userID: ID) {
+  ...TodoList_list
+}
+"
+`;
+
+exports[`transform should transform to replace arguments 1`] = `
+"fragment Hoge on Query {
+  hello(bar: $foo)
+}
+
+query MyQuery($foo: String!) {
+  ...Hoge
+}
+"
+`;
+
+exports[`transform should transform to replace arguments with defaultValue 1`] = `
+"fragment Hoge on Query {
+  hello(bar: defaultValue: \\"BAR\\")
+}
+
+query MyQuery {
+  ...Hoge
+}
+"
+`;
+
+exports[`transform should transform with nesetd fragments 1`] = `
+"fragment Fuga on Product {
+  relatedProducts(count: $count) {
+    name
+  }
+}
+
+fragment Hoge on Query {
+  products(count: $count) {
+    name
+    price
+    ...Fuga
+  }
+}
+
+query MyQuery($count: Int!) {
+  ...Hoge
+}
+"
+`;

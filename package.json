@@ -1,0 +1,70 @@
+{
+  "name": "apollo-link-fragment-argument",
+  "version": "1.0.0-alpha.0",
+  "description": "An Apollo Link enables @argumentDefinitions and @arguments directives",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prettier": "prettier \"*.js\" \"*.md\" \"*.json\" \"*.yml\" \"src/**/*\"",
+    "format": "yarn prettier --write",
+    "format:check": "yarn prettier --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quramy/apollo-link-fragment-argument.git"
+  },
+  "keywords": [
+    "apollo",
+    "graphql",
+    "fragment"
+  ],
+  "author": "Quramy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Quramy/apollo-link-fragment-argument/issues"
+  },
+  "homepage": "https://github.com/Quramy/apollo-link-fragment-argument#readme",
+  "dependencies": {
+    "apollo-link": "^1.0.0"
+  },
+  "peerDependencies": {
+    "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^24.0.24",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "(src/.*\\.test)\\.ts$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "\\.d\\.ts$",
+      "lib/.*",
+      "typedef/.*",
+      "types/.*"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json"
+    ]
+  }
+}
