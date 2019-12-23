@@ -1,6 +1,6 @@
 # apollo-link-fragment-argument
 
-An Apollo Link enables `@argumentDefinitions` and `@arguments` directives inspired from [Relay Modern's Fragment container](https://relay.dev/docs/en/fragment-container.html#passing-arguments-to-a-fragment).
+An Apollo Link to enable`@argumentDefinitions` and `@arguments` directives inspired from [Relay Modern's Fragment container](https://relay.dev/docs/en/fragment-container.html#passing-arguments-to-a-fragment).
 
 ## Usage
 
@@ -70,7 +70,7 @@ I'm loving [GraphQL's fragments colocation](https://www.apollographql.com/docs/r
 
 However, GraphQL syntax has no ability to parameterize Fragment (See https://github.com/graphql/graphql-spec/issues/204 if you want detail).
 
-`@argumentDefinitions` and `@arguments` are originally introduced by Relay Modern to compose parametrized Fragments.
+`@argumentDefinitions` and `@arguments` are originally introduced by Relay Modern to compose parametrized Fragments. See https://relay.dev/docs/en/fragment-container.html#composing-fragments ,
 
 ## License
 
