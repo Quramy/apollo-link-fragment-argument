@@ -38,7 +38,7 @@ query MyQuery($foo: String!) {
 
 exports[`transform should transform to replace arguments with defaultValue 1`] = `
 "fragment Hoge on Query {
-  hello(bar: defaultValue: \\"BAR\\")
+  hello(bar: \\"BAR\\")
 }
 
 query MyQuery {
