@@ -1,6 +1,6 @@
 # apollo-link-fragment-argument
 
-![](https://github.com/Quramy/apollo-link-fragment-argument/workflows/test/badge.svg)
+![](https://github.com/Quramy/apollo-link-fragment-argument/workflows/build/badge.svg)
 
 An Apollo Link to enable`@argumentDefinitions` and `@arguments` directives inspired from [Relay Modern's Fragment container](https://relay.dev/docs/en/fragment-container.html#passing-arguments-to-a-fragment).
 
