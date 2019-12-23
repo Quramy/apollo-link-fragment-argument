@@ -4,3 +4,4 @@ src/
 .prettierignore
 tsconfig.json
 yarn.lock
+.github/
