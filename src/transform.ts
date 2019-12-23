@@ -63,7 +63,7 @@ function createArgumentDefnitionModelMap(argumentDefinitionsNode: DirectiveNode)
     const defaultValueNode = value.fields.find(f => f.name.value === "defaultValue");
     const model = {
       variableType,
-      defaultValueNode,
+      defaultValueNode: defaultValueNode ? defaultValueNode.value : undefined,
     } as ArgumentDefinitionModel;
     modelMap.set(varName, model);
   });
